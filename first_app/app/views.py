@@ -186,7 +186,7 @@ class ProductPubView(ModelView):
 
 class ProductView(ModelView):
     datamodel = SQLAInterface(Product)
-
+    list_columns = ["name", "price_label"]
 
 class ProductTypeView(ModelView):
     datamodel = SQLAInterface(ProductType)
